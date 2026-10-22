@@ -1,0 +1,463 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>ორი Tesla და ერთი გაუთვალისწინებელი შემთხვევა</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@600;800&family=Noto+Sans+Georgian:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff1ee;--ink:#2a2350;--soft:#5d5784;--card:#fff;--line:#f2c9d3;--rose:#ef7f9a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15133a;--ink:#fbeef0;--soft:#c9c3e8;--card:#23205a;--line:#44408a}}
+:root[data-theme="dark"]{--bg:#15133a;--ink:#fbeef0;--soft:#c9c3e8;--card:#23205a;--line:#44408a}
+*{box-sizing:border-box;margin:0}
+html,body{min-height:100%;touch-action:manipulation;-webkit-text-size-adjust:100%}
+button,.card,svg{touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans Georgian",system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+h1,h2{font-family:"Noto Serif Georgian",Georgia,serif;line-height:1.3}
+#dots{display:flex;gap:6px;justify-content:center;padding:56px 10px 4px;flex-wrap:wrap}
+#dots i{width:9px;height:9px;border-radius:50%;background:var(--line);transition:.3s}
+#dots i.on{background:var(--rose);width:26px;border-radius:9px}
+.scene{display:none;max-width:760px;margin:0 auto;padding:10px 16px 40px}
+.scene.on{display:block;animation:sc .6s ease}
+@keyframes sc{from{opacity:0;transform:translateX(30px)}}
+.card{background:var(--card);border-radius:30px;border:1px solid var(--line);box-shadow:0 18px 50px rgba(239,127,154,.22);overflow:hidden}
+.card svg.il{display:block;width:100%;height:auto}
+.body{padding:20px 24px 24px}
+.tag{display:inline-block;background:#ffd3c0;color:#7a2c44;border-radius:99px;padding:1px 14px;font-size:14px;font-weight:600;margin-bottom:8px}
+h2{font-size:clamp(22px,4vw,30px);margin-bottom:10px}
+.body p{color:var(--soft);margin-bottom:8px}
+.q{padding:8px 16px;border-radius:18px 18px 18px 4px;margin:8px 0;background:#e0f5f2;color:#17423d;width:fit-content;max-width:92%;opacity:0;animation:b .5s ease forwards;animation-delay:var(--d,.5s)}
+.q.g{background:#fde4ec;color:#6b2640;border-radius:18px 18px 4px 18px;margin-left:auto}
+.q.p{background:#fff0c4;color:#5f4400;margin-left:auto;margin-right:auto;border-radius:18px}
+@keyframes b{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:none}}
+.nar{border-left:3px solid var(--rose);padding-left:14px;font-style:italic;margin-top:12px;color:var(--ink)!important;opacity:0;animation:b .6s ease forwards;animation-delay:var(--d,1.6s)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;opacity:0;animation:b .6s ease forwards;animation-delay:2.2s}
+.meta span{font-size:14px;padding:2px 12px;border-radius:99px;border:1px solid var(--line)}
+.nav{display:flex;gap:12px;justify-content:center;margin-top:22px}
+button{font:600 17px "Noto Sans Georgian",system-ui,sans-serif;border:0;border-radius:99px;padding:14px 28px;cursor:pointer;transition:transform .15s}
+button:hover{transform:translateY(-2px)}button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.nx{background:#2a2350;color:#fff;box-shadow:0 10px 24px rgba(42,35,80,.3)}
+.bk{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.cover{text-align:center;color:#fff}
+.cover .card{background:linear-gradient(180deg,#1d1b4d,#5b3a7d 55%,#ef7f9a);border:0}
+.cover h1{font-size:clamp(28px,6vw,48px);font-weight:800;padding:26px 20px 8px}
+.cover p{padding:0 20px 8px;opacity:.92;font-size:18px}
+.cover .nav{padding:10px 0 28px;margin:0}
+.cv1{animation:l 1.5s cubic-bezier(.2,.7,.2,1) both}.cv2{animation:r 1.5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes l{from{transform:translateX(-220px)}}@keyframes r{from{transform:translateX(220px)}}
+.pop{animation:p 2.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes p{50%{transform:scale(1.2)}}
+.fl{animation:fy 5s ease-in infinite;transform-box:fill-box}
+@keyframes fy{0%{transform:translateY(0);opacity:0}20%{opacity:1}100%{transform:translateY(-70px);opacity:0}}
+.rain{animation:rn .6s linear infinite}
+@keyframes rn{to{transform:translate(-8px,20px)}}
+.blink{animation:bl 1s steps(2) infinite}@keyframes bl{50%{opacity:.15}}
+.drive{animation:dr 7s linear infinite}@keyframes dr{from{transform:translateX(-40px)}to{transform:translateX(160px)}}
+#msg{margin:18px auto 0;padding:16px 20px;border-radius:20px;background:#fff;color:#2a2350;font-weight:500;display:none;text-align:center;box-shadow:0 8px 24px rgba(42,35,80,.2)}
+#msg.show{display:block;animation:b .5s ease}
+.hb{position:fixed;bottom:-30px;font-size:26px;pointer-events:none;animation:up 3s linear forwards;z-index:9}
+@keyframes up{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+#no{background:#fff;color:#2a2350;border:2px solid #2a2350}
+#home{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);left:12px;z-index:20;display:none;padding:8px 16px;font-size:14px;background:var(--card);color:var(--ink);border:2px solid var(--line);box-shadow:0 6px 18px rgba(42,35,80,.18)}
+#home.vis{display:block}
+#meter{max-width:460px;margin:46px auto 0;padding:0 16px;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--soft)}
+#meter .bar{flex:1;height:10px;border-radius:9px;background:var(--line);overflow:hidden}
+#mb{display:block;height:100%;width:5%;background:linear-gradient(90deg,#ff9a8b,#ef7f9a,#ff4d7e);border-radius:9px;transition:width 1s cubic-bezier(.2,.8,.2,1)}
+#snd{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);right:12px;z-index:20;padding:8px 16px;font-size:14px;background:var(--card);color:var(--ink);border:2px solid var(--line)}
+.scene{position:relative;z-index:1}
+.bgh{position:fixed;bottom:-30px;z-index:0;opacity:.35;pointer-events:none;animation:up 10s linear forwards}
+.pk{position:fixed;z-index:30;pointer-events:none;font-size:20px;animation:pk 1.2s ease-out forwards;transform:translate(-50%,-50%)}
+@keyframes pk{to{transform:translate(calc(-50% + var(--dx,0px)),-90px) scale(1.3);opacity:0}}
+.pk.sp{font-size:12px;animation-duration:.7s}
+.pk.tx{font:800 18px "Noto Serif Georgian",serif;color:#ef7f9a;text-shadow:0 1px 0 #fff}
+.gbtn{background:var(--rose);color:#fff;margin:10px 0}
+.lane{display:flex;align-items:center;gap:8px;margin:8px 0;font-size:14px}.lane span{width:92px}
+.tr{flex:1;height:14px;background:var(--line);border-radius:9px;overflow:hidden}.tr i{display:block;height:100%;width:0;background:var(--rose);border-radius:9px;transition:width .1s}#p2{background:#3b82d9}
+#gres{margin-top:8px;font-weight:500;color:var(--ink)!important}
+.ticket{display:flex;margin:18px auto 0;max-width:420px;border-radius:18px;overflow:hidden;background:linear-gradient(120deg,#2a2350,#5b3a7d);color:#fff;box-shadow:0 14px 34px rgba(42,35,80,.35);animation:b .8s ease both;text-align:left}
+.ticket .tl{flex:1;padding:16px 18px;display:flex;flex-direction:column;gap:2px;font-size:14px}.ticket b{font-family:"Noto Serif Georgian",serif;font-size:18px;margin:2px 0 6px;color:#ffd3c0}.ticket small{letter-spacing:.12em;opacity:.8}
+.ticket .tr2{padding:16px;border-left:2px dashed rgba(255,255,255,.5);text-align:center;font-size:28px;display:flex;flex-direction:column;justify-content:center}.ticket .tr2 small{font-size:10px}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important}}
+</style>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "z11dzjkmz7");
+</script>
+
+    <script data-goatcounter="https://androbba.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="gD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe6ff"/><stop offset="1" stop-color="#ffe3d6"/></linearGradient>
+<linearGradient id="gS" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b3a7d"/><stop offset="1" stop-color="#ff9a8b"/></linearGradient>
+<linearGradient id="gN" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17153f"/><stop offset="1" stop-color="#40338a"/></linearGradient>
+<linearGradient id="gM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4f1ee"/><stop offset="1" stop-color="#fff1ee"/></linearGradient>
+<symbol id="car" viewBox="0 0 120 52"><path d="M5 38c0-6 3-9 9-10l17-13c3-2 6-3 10-3h30c5 0 9 2 12 5l12 9c9 1 20 3 22 8v6c0 2-1 3-3 3H8c-2 0-3-1-3-3z" fill="currentColor"/><path d="M36 28l12-10h20v10zM74 28V18h6l13 10z" fill="#fff" opacity=".6"/><circle cx="32" cy="43" r="8.5" fill="#1d1b4d"/><circle cx="92" cy="43" r="8.5" fill="#1d1b4d"/><circle cx="32" cy="43" r="3.5" fill="#d9d6ee"/><circle cx="92" cy="43" r="3.5" fill="#d9d6ee"/><rect x="108" y="33" width="8" height="4" rx="2" fill="#ffe9a8"/></symbol>
+<symbol id="hrt" viewBox="0 0 24 22"><path d="M12 21C-6 8 3-2 12 6c9-8 18 2 0 15z" fill="currentColor"/></symbol>
+<symbol id="per" viewBox="0 0 30 64"><rect x="8" y="44" width="5" height="18" rx="2" fill="#2a2350"/><rect x="17" y="44" width="5" height="18" rx="2" fill="#2a2350"/><rect x="3" y="20" width="24" height="30" rx="10" fill="currentColor"/><circle cx="15" cy="10" r="9" fill="#f3c9a8"/><path d="M6 9c0-8 18-8 18 0-5-3-13-3-18 0z" fill="#3a2a2a"/></symbol>
+<symbol id="bus" viewBox="0 0 150 64"><rect x="2" y="4" width="146" height="50" rx="10" fill="#f5b94a"/><g fill="#d8f1ff"><rect x="10" y="12" width="22" height="18" rx="3"/><rect x="38" y="12" width="22" height="18" rx="3"/><rect x="66" y="12" width="22" height="18" rx="3"/><rect x="94" y="12" width="22" height="18" rx="3"/><rect x="122" y="12" width="20" height="30" rx="3"/></g><circle cx="35" cy="54" r="9" fill="#2a2350"/><circle cx="108" cy="54" r="9" fill="#2a2350"/><circle cx="35" cy="54" r="3.5" fill="#ddd"/><circle cx="108" cy="54" r="3.5" fill="#ddd"/></symbol>
+</defs></svg>
+
+<button id="home" type="button" aria-label="პირველ გვერდზე დაბრუნება">🏠 დასაწყისი</button>
+<div id="dots" aria-hidden="true"></div>
+
+<!-- 0 COVER -->
+<section class="scene cover on"><div class="card">
+<svg class="il" viewBox="0 0 400 190" role="img" aria-label="ორი Tesla ერთმანეთისკენ მოდის, შუაში გული">
+<rect width="400" height="190" fill="none"/>
+<g fill="#fff"><circle cx="40" cy="30" r="1.8"/><circle cx="110" cy="60" r="1.5"/><circle cx="190" cy="20" r="2"/><circle cx="300" cy="46" r="1.6"/><circle cx="360" cy="16" r="2"/></g>
+<circle cx="200" cy="120" r="70" fill="#ffd3c0" opacity=".3"/>
+<g fill="#2a2350"><rect x="0" y="150" width="400" height="40"/><rect x="20" y="104" width="22" height="46"/><rect x="48" y="90" width="18" height="60"/><rect x="340" y="98" width="24" height="52"/><rect x="368" y="112" width="20" height="38"/></g>
+<path d="M0 170h400" stroke="#f5b94a" stroke-width="2" stroke-dasharray="16 14"/>
+<g class="cv1" style="color:#3b82d9"><use href="#car" x="40" y="108" width="140" height="61"/></g>
+<g class="cv2" style="color:#6c7184"><use href="#car" x="220" y="108" width="140" height="61" transform="translate(580 0) scale(-1 1)"/></g>
+</svg>
+<h1>ყველაფერი ერთი სიგნალით დაიწყო...🚗</h1>
+<p>ორი Tesla, ორი ჯიუტი მძღოლი, ერთი ბენზინგასამართი სადგური.</p>
+<p style="font-size:15px;opacity:.85">ჟანრი: რომანტიკული კომედია, დეტექტივი... დანარჩენი ჯერ გასარკვევია.</p>
+<div class="nav"><button class="nx" type="button">🎬 ნახე, რა მოხდა შემდეგ</button></div>
+</div></section>
+
+<!-- 1 -->
+<section class="scene"><div class="card">
+<svg class="il" viewBox="0 0 400 210" role="img" aria-label="ორი Tesla ბენზინგასამართთან ეჯახება ერთმანეთს">
+<rect width="400" height="210" fill="url(#gD)"/><circle cx="340" cy="44" r="24" fill="#ffd27a"/>
+<path d="M40 150h26v-62H40z" fill="#c9a0b0" opacity="0"/>
+<rect x="30" y="40" width="210" height="14" rx="7" fill="#ef7f9a"/><rect x="50" y="54" width="8" height="106" fill="#c9a0b0"/><rect x="212" y="54" width="8" height="106" fill="#c9a0b0"/>
+<rect x="290" y="96" width="34" height="64" rx="6" fill="#58c4b8"/><rect x="296" y="104" width="22" height="16" rx="3" fill="#fff"/>
+<rect y="160" width="400" height="50" fill="#4b3f78"/>
+<g style="color:#3b82d9"><use href="#car" x="12" y="112" width="150" height="65"/></g>
+<g style="color:#6c7184"><use href="#car" x="200" y="112" width="150" height="65" transform="translate(562 0) scale(-1 1)"/></g>
+<path d="M181 62l8 24 22-14-10 26 26 4-26 10 14 22-28-8-4 22-12-22-18 14 6-24-24-2 22-14-14-18 22 6z" fill="#f5b94a" class="pop"/>
+<text x="157" y="118" font-family="Noto Serif Georgian,serif" font-weight="800" font-size="17" fill="#7a2c44">ბრახ!</text>
+</svg>
+<div class="body"><span class="tag">ეპიზოდი 1 · 10 ივნისი</span><h2>დიდი დაპირისპირება 🚗</h2>
+<p>თბილისი, დილის საცობები. ანდროს ნერვები უკვე გამოცდაზეა.</p>
+
+<p>ამ დროს სცენაზე ჩნდება მუქი ნაცრისფერი Tesla Model 3, რომლის მძღოლსაც ბენზინგასამართ სადგურზე შესვლა ზუსტად იმავე წამს მოუნდა.</p>
+
+<p>ორი Tesla, ერთი შესასვლელი, ნულოვანი სურვილი დათმობის.</p>
+<div class="q" style="--d:.4s"><b>ანდრო:</b> „მე ვიყავი პირველი!“</div>
+<div class="q g" style="--d:1s"><b>გვანცა:</b> „არა, მე!“</div>
+<p class="nar" style="--d:1.6s">„მათ ჯერ არ იცოდნენ, რომ ეს კამათი გაცნობაზე ბევრად ძვირი დაუჯდებოდათ.“</p>
+<div class="nav"><button class="bk" type="button">უკან</button><button class="nx" type="button">შემდეგი სცენა</button></div></div>
+</div></section>
+
+<!-- 2 -->
+<section class="scene"><div class="card">
+<svg class="il" viewBox="0 0 400 210" role="img" aria-label="ანდრო და გვანცა ერთმანეთს ეძებენ">
+<rect width="400" height="210" fill="url(#gM)"/><rect y="170" width="400" height="40" fill="#e9c9d6"/>
+<g style="color:#3b82d9"><use href="#per" x="40" y="104" width="44" height="94"/></g>
+<g style="color:#ef7f9a"><use href="#per" x="316" y="104" width="44" height="94"/></g>
+<ellipse cx="108" cy="52" rx="48" ry="34" fill="#fff"/><g style="color:#6c7184"><use href="#car" x="76" y="34" width="64" height="28"/></g><path d="M80 80l-8 20 20-10z" fill="#fff"/>
+<ellipse cx="292" cy="52" rx="48" ry="34" fill="#fff"/><g style="color:#3b82d9"><use href="#car" x="260" y="34" width="64" height="28"/></g><path d="M320 80l8 20-20-10z" fill="#fff"/>
+<path d="M96 130C150 70 250 70 304 130" fill="none" stroke="#ef7f9a" stroke-width="2.5" stroke-dasharray="6 7"/>
+<g style="color:#ff6f91" class="pop"><use href="#hrt" x="184" y="78" width="32" height="29"/></g>
+<circle cx="64" cy="130" r="9" fill="none" stroke="#2a2350" stroke-width="3"/><path d="M71 137l9 9" stroke="#2a2350" stroke-width="3"/>
+</svg>
+<div class="body"><span class="tag">ეპიზოდი 2</span><h2>ოპერაცია „იპოვეთ Tesla-ს მძღოლი“ 🔍</h2>
+<p>ანდრო სამსახურში აღმოაჩენს, რომ დილის კამათი მხოლოდ სიტყვიერი არ ყოფილა და ნაცრისფერ Tesla-ს თურმე სამახსოვრო ნაკაწრიც დაუტოვა.</p>
+<p>იწყება ორი პარალელური სამძებრო ოპერაცია.</p>
+<div class="q g" style="--d:.4s"><b>გვანცა:</b> „ალო, პატრულია? ერთი ლურჯი Tesla უნდა ვიპოვოთ.“</div>
+<div class="q" style="--d:1s"><b>ანდრო:</b> „ერთი ნაცრისფერი Tesla-ს მძღოლი უნდა ვიპოვო... სასურველია პატრულზე ადრე 😅“</div>
+<p class="nar" style="--d:1.6s">მთხრობელი: „რომანტიკული კომედიების ისტორიაში პირველად, ორი მთავარი გმირი ერთმანეთს ერთდროულად ეძებდა - სრულიად არარომანტიკული მიზეზებით.“</p>
+<p style="margin-top:10px">ანდრო გვანცას უკავშირდება, ბოდიშს უხდის და ზიანს ანაზღაურებს. ყველაფერი კარგად დასრულდა... <i>ყოველშემთხვევაში მათ ასე ეგონათ.</i></p>
+<div class="nav"><button class="bk" type="button">უკან</button><button class="nx" type="button">შემდეგი სცენა</button></div></div>
+</div></section>
+
+<!-- 3 -->
+<section class="scene"><div class="card">
+<svg class="il" viewBox="0 0 400 210" role="img" aria-label="პატრულის მანქანა მოციმციმე შუქებით">
+<rect width="400" height="210" fill="url(#gN)"/>
+<circle cx="170" cy="100" r="70" fill="#ff5c7a" opacity=".3" class="blink"/><circle cx="240" cy="100" r="70" fill="#4aa3ff" opacity=".3" class="blink" style="animation-delay:.5s"/>
+<rect y="170" width="400" height="40" fill="#16143a"/>
+<g style="color:#f4f4fa"><use href="#car" x="150" y="108" width="190" height="82"/></g>
+<rect x="212" y="104" width="30" height="9" rx="4" fill="#ff5c7a" class="blink"/><rect x="246" y="104" width="30" height="9" rx="4" fill="#4aa3ff" class="blink" style="animation-delay:.5s"/>
+<g style="color:#2f6bd6"><use href="#per" x="96" y="110" width="40" height="86"/></g><rect x="126" y="140" width="24" height="15" rx="2" fill="#fff" stroke="#f5b94a" stroke-width="2"/>
+<g style="color:#3b82d9"><use href="#per" x="26" y="118" width="34" height="74"/></g><g style="color:#ef7f9a"><use href="#per" x="60" y="118" width="34" height="74"/></g>
+<text x="130" y="60" text-anchor="middle" font-size="26">🪪</text>
+</svg>
+<div class="body"><span class="tag">ეპიზოდი 3</span><h2>საქმე დახურულია? პატრულს სხვა გეგმები აქვს! 👮</h2>
+<p><b>პატრული</b> - მისი განსაკუთრებული უნარი: უკვე მოგვარებული პრობლემის ხელახლა შექმნა.</p>
+<div class="q p" style="--d:.3s"><b>პატრული:</b> „მართვის მოწმობა ჩამოგერთვათ 6 თვით“</div>
+<div class="q" style="--d:.9s"><b>ანდრო:</b> „მაგრამ ჩვენ ყველაფერი უკვე მოვაგვარეთ!“</div>
+<div class="q g" style="--d:1.5s"><b>გვანცა:</b> „მე ხომ არ მითხოვია მისთვის პრავის წართმევა?!“</div>
+<div class="q p" style="--d:2.1s"><b>პატრული:</b> „წესები წესებია!“</div>
+<p class="nar" style="--d:2.7s">მთხრობელი: „ასე დაიწყო ბრძოლა მართვის მოწმობისთვის, რომელსაც არცერთი მთავარი გმირი არ ელოდა.“</p>
+<div class="nav"><button class="bk" type="button">უკან</button><button class="nx" type="button">შემდეგი სცენა</button></div></div>
+</div></section>
+
+<!-- 4 -->
+<section class="scene"><div class="card">
+<svg class="il" viewBox="0 0 400 210" role="img" aria-label="ორი Tesla ერთმანეთის გვერდით შუქნიშანთან, ზემოთ გული">
+<rect width="400" height="210" fill="url(#gS)"/><circle cx="200" cy="130" r="50" fill="#ffd27a" opacity=".8"/>
+<g fill="#3a2f6a"><rect x="14" y="80" width="40" height="80"/><rect x="60" y="100" width="34" height="60"/><rect x="306" y="86" width="38" height="74"/><rect x="350" y="106" width="36" height="54"/></g>
+<g fill="#ffe9a8"><rect x="22" y="90" width="8" height="8"/><rect x="36" y="108" width="8" height="8"/><rect x="316" y="96" width="8" height="8"/><rect x="360" y="118" width="8" height="8"/></g>
+<rect y="160" width="400" height="50" fill="#2a2350"/><path d="M0 188h400" stroke="#f5b94a" stroke-width="2" stroke-dasharray="14 12"/>
+<g style="color:#3b82d9"><use href="#car" x="90" y="124" width="110" height="48"/></g><g style="color:#6c7184"><use href="#car" x="205" y="124" width="110" height="48"/></g>
+<rect x="352" y="60" width="10" height="100" fill="#1d1b4d"/><circle cx="357" cy="72" r="6" fill="#58e29a"/>
+<g style="color:#ff6f91" class="pop"><use href="#hrt" x="186" y="56" width="40" height="37"/></g>
+<g style="color:#fff"><use href="#hrt" x="130" y="80" width="14" height="13" class="fl"/><use href="#hrt" x="270" y="86" width="12" height="11" class="fl" style="animation-delay:1.5s"/></g>
+</svg>
+<div class="body"><span class="tag">ეპიზოდი 4</span><h2>საეჭვოდ ბევრი დამთხვევა ❤️</h2>
+  <p>
+    აღმოჩნდა, რომ მთავარ გმირებს გაცილებით მეტი საერთო
+    ჰქონდათ, ვიდრე მხოლოდ ავარიის ადგილი.
+  </p>
+
+  <div class="coincidences">
+    <p> <strong>ავტომობილი:</strong> ორივეს Tesla Model 3.</p>
+    <p><strong>საცხოვრებელი:</strong> ერთი უბანი.</p>
+    <p> <strong>სამსახური:</strong> ისევ ერთი უბანი.</p>
+
+     <p>
+    მაგრამ ყველაზე საინტერესო შეთავაზება ჯერ კიდევ წინ იყო...
+  </p>
+  </div>
+<div class="q g" style="--d:.5s"><b>გვანცა:</b> „თუ პრავას წაგართმევენ, სამსახურში მე გაგიყოლებ ხოლმე“</div>
+<p class="nar" style="--d:1.2s">„ისტორიაში პირველად, შესაძლო რომანტიკული განვითარება საზოგადოებრივი ტრანსპორტის ალტერნატივად გამოჩნდა.“</p>
+<div class="meta" style="animation-delay:1.8s"><span>რომანტიკული ინტერესი: იზრდება... 📈</span></div>
+<div class="nav"><button class="bk" type="button">უკან</button><button class="nx" type="button">შემდეგი სცენა</button></div></div>
+</div></section>
+
+<!-- 5 -->
+<section class="scene"><div class="card">
+<svg class="il" viewBox="0 0 400 210" role="img" aria-label="ანდრო და გვანცა კაფეში, ანდრო ნერვიულობს">
+<rect width="400" height="210" fill="#ffd9c9"/><rect y="150" width="400" height="60" fill="#c98a73"/>
+<rect x="30" y="20" width="90" height="62" rx="6" fill="#bfe6ff"/><path d="M75 20v62M30 51h90" stroke="#fff" stroke-width="3"/><circle cx="96" cy="40" r="8" fill="#ffd27a"/>
+<rect x="250" y="26" width="120" height="26" rx="13" fill="#2a2350"/><text x="310" y="44" text-anchor="middle" font-size="12" fill="#fff" font-family="Noto Sans Georgian,sans-serif">დოკუმენტური ფილმი</text>
+<g style="color:#3b82d9"><use href="#per" x="104" y="80" width="56" height="120"/></g><g style="color:#ef7f9a"><use href="#per" x="244" y="80" width="56" height="120"/></g>
+<rect x="150" y="142" width="108" height="10" rx="4" fill="#7a4a3a"/><rect x="198" y="152" width="12" height="40" fill="#7a4a3a"/>
+<g fill="#fff"><rect x="166" y="124" width="22" height="18" rx="4"/><rect x="224" y="124" width="22" height="18" rx="4"/></g>
+<rect x="204" y="118" width="6" height="24" fill="#fff"/><path d="M207 106c-6 6 0 10 0 14 6-4 6-8 0-14z" fill="#f5b94a" class="blink"/>
+<path d="M172 120c-4-8 4-10 0-18M236 120c-4-8 4-10 0-18" stroke="#fff" stroke-width="2" fill="none" opacity=".8"/>
+<path d="M142 96q4 8 0 14q-4-6 0-14z" fill="#58b8ff" class="blink"/>
+</svg>
+<div class="body"><span class="tag">ეპიზოდი 5</span><h2>რომანტიკული კომედია, რომელსაც რომანტიკა დააკლდა 🍿</h2>
+<p>პირველი პაემანი, მეორე პაემანი, ორი ლანჩიც. მთავარ გმირს დაავიწყდა, რომ რომანტიკულ კომედიაში მხოლოდ კარგი საუბარი საკმარისი არ არის.</p>
+<p class="nar" style="--d:.6s">„ანდრო ისე ფრთხილად იქცეოდა, რომ ფილმს დოკუმენტური ჟანრის ნომინაცია ემუქრებოდა.“</p>
+<div class="nav"><button class="bk" type="button">უკან</button><button class="nx" type="button">შემდეგი სცენა</button></div></div>
+</div></section>
+
+<!-- 6 -->
+<section class="scene"><div class="card">
+<svg class="il" viewBox="0 0 400 210" role="img" aria-label="კარტინგის ტრასა, ორი მანქანა, ფინიშის დროშა და გაფუჭებული ეკრანი">
+<rect width="400" height="210" fill="url(#gD)"/>
+<ellipse cx="200" cy="150" rx="210" ry="50" fill="#4b3f78"/><ellipse cx="200" cy="150" rx="210" ry="50" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="14 10" opacity=".8"/>
+<g class="drive" style="color:#3b82d9"><use href="#car" x="120" y="112" width="110" height="48"/></g><g class="drive" style="color:#6c7184;animation-duration:9s"><use href="#car" x="20" y="136" width="110" height="48"/></g>
+<rect x="340" y="40" width="4" height="100" fill="#2a2350"/><rect x="344" y="40" width="42" height="30" fill="#fff"/><path d="M344 40h10v10h-10zM364 40h10v10h-10zM354 50h10v10h-10zM374 50h10v10h-10zM344 60h10v10h-10zM364 60h10v10h-10z" fill="#2a2350"/>
+<rect x="30" y="26" width="70" height="44" rx="6" fill="#2a2350"/><path d="M52 38l26 20M78 38L52 58" stroke="#ff5c7a" stroke-width="4"/>
+<text x="65" y="90" text-anchor="middle" font-size="12" fill="#2a2350" font-family="Noto Sans Georgian,sans-serif">ეკრანი გაფუჭდა</text>
+</svg>
+<div class="body"><span class="tag">ეპიზოდი 6</span><h2>კარტინგი: საუკუნის უსამართლობა 🏎️</h2>
+<p>ფსონი: დამარცხებული გამარჯვებულს დესერტზე ეპატიჟება. 🏁 ანდრო იმარჯვებს! მაგრამ ტექნიკური ხარვეზის გამო შედეგები ეკრანზე არ ჩანს.</p>
+<div class="q g" style="--d:.4s"><b>გვანცა:</b> „მე არ წამიგია! სად არის მტკიცებულება?“</div>
+<div class="q" style="--d:1s"><b>ანდრო:</b> „თანამშრომელმა ხომ გვითხრა შედეგები!“</div>
+<div class="q g" style="--d:1.6s"><b>გვანცა:</b> „ეგ არ ითვლება!“</div>
+<p class="nar" style="--d:2.2s">„იმ დღეს ტექნიკურმა ხარვეზმა ანდროს გამარჯვება წაართვა, გვანცამ კი დესერტი.“</p>
+<button class="gbtn" id="gstart" type="button">🏁 რევანში: Click To Play!</button>
+<div id="game" hidden><div class="lane"><span>🚘 გვანცა</span><div class="tr"><i id="p1"></i></div></div><div class="lane"><span>🚙 ანდრო</span><div class="tr"><i id="p2"></i></div></div><button class="gbtn" id="tap" type="button">⚡ დააჭირე სწრაფად!</button><p id="gres"></p></div>
+<div class="nav"><button class="bk" type="button">უკან</button><button class="nx" type="button">შემდეგი სცენა</button></div></div>
+</div></section>
+
+<!-- 7 -->
+<section class="scene"><div class="card">
+<svg class="il" viewBox="0 0 400 210" role="img" aria-label="კინოთეატრის ეკრანზე პაუზაა">
+<rect width="400" height="210" fill="#120f33"/>
+<rect x="70" y="26" width="260" height="120" rx="6" fill="#2b2760"/><rect x="176" y="62" width="14" height="48" rx="3" fill="#fff"/><rect x="210" y="62" width="14" height="48" rx="3" fill="#fff"/>
+<path d="M0 0h70v160c-20 10-50 20-70 20zM400 0h-70v160c20 10 50 20 70 20z" fill="#b3263f"/><rect width="400" height="16" fill="#8d1d32"/>
+<rect y="170" width="400" height="40" fill="#1d1b4d"/>
+<g style="color:#3b82d9"><use href="#per" x="120" y="130" width="30" height="66"/></g><g style="color:#ef7f9a"><use href="#per" x="250" y="130" width="30" height="66"/></g>
+<g style="color:#ff6f91" opacity=".6"><use href="#hrt" x="188" y="150" width="24" height="22" class="fl"/></g>
+</svg>
+<div class="body"><span class="tag">ეპიზოდი 7</span><h2>სეზონის მოულოდნელი ფინალი 🎭</h2>
+<p>გვანცამ გადაწყვიტა, რომ ეს უფრო მეგობრული ისტორია იყო. ანდრომ კი გააცნობიერა, რომ მხოლოდ კარგი საუბრები კარგ რომანტიკულ სცენარს ვერ ქმნის.</p>
+<p class="nar" style="--d:.7s">„ზოგჯერ ყველაზე საინტერესო ისტორიებიც კი პაუზაზე გადის“</p>
+<p style="margin-top:10px"><i>ეკრანი ბნელდება. TO BE CONTINUED...?</i></p>
+<div class="nav"><button class="bk" type="button">უკან</button><button class="nx" type="button">შემდეგი სცენა</button></div></div>
+</div></section>
+
+<!-- 8 -->
+<section class="scene"><div class="card">
+<svg class="il" viewBox="0 0 400 210" role="img" aria-label="სასამართლო, მართვის მოწმობა დაბრუნებულია, მანქანა გაყიდულია">
+<rect width="400" height="210" fill="url(#gD)"/>
+<path d="M40 70L140 24l100 46z" fill="#c9a0b0"/><rect x="40" y="70" width="200" height="8" fill="#a8788a"/>
+<g fill="#f6dfe6"><rect x="56" y="78" width="14" height="72"/><rect x="92" y="78" width="14" height="72"/><rect x="128" y="78" width="14" height="72"/><rect x="164" y="78" width="14" height="72"/><rect x="200" y="78" width="14" height="72"/></g>
+<rect y="150" width="400" height="60" fill="#8d7aa8"/>
+<rect x="258" y="86" width="64" height="42" rx="6" fill="#fff" stroke="#f5b94a" stroke-width="3" class="pop"/><circle cx="276" cy="104" r="8" fill="#f3c9a8"/><path d="M290 98h24M290 108h18" stroke="#6b6590" stroke-width="3"/>
+<g style="color:#f5b94a" opacity=".9"><path d="M290 66l4 10 10 1-8 7 3 10-9-6-9 6 3-10-8-7 10-1z" fill="currentColor" class="blink"/></g>
+<g style="color:#6c7184" opacity=".8"><use href="#car" x="260" y="148" width="100" height="43"/></g><rect x="290" y="158" width="52" height="18" rx="3" fill="#ff5c7a"/><text x="316" y="171" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="sans-serif">SOLD</text>
+<text x="140" y="136" text-anchor="middle" font-size="30">⚖️</text>
+</svg>
+<div class="body"><span class="tag">ეპიზოდი 8</span><h2>ტრანსპორტის ტრაგიკომედია ⚖️</h2>
+<div class="q p" style="--d:.3s"><b>პატრული:</b> „პრავა ჩამაბარე!“</div>
+<p>ანდრო საბოლოოდ კარგავს მართვის მოწმობას, გაბრაზებული ყიდის ორივე მანქანას. მაგრამ სწორედ მაშინ ჩნდება მოულოდნელი სუპერგმირი...</p>
+<div class="q p" style="--d:1s"><b>მოსამართლე:</b> „სამართლიანობა აღდგეს!“</div>
+<p class="nar" style="--d:1.6s">„ანდრომ გაიმარჯვა. მხოლოდ ერთი პატარა პრობლემა დარჩა...“</p>
+<div class="meta" style="animation-delay:2s"><span>მართვის მოწმობა ✅</span><span>მანქანა ❌</span></div>
+<div class="nav"><button class="bk" type="button">უკან</button><button class="nx" type="button">შემდეგი სცენა</button></div></div>
+</div></section>
+
+<!-- 9 NEW -->
+<section class="scene"><div class="card">
+<svg class="il" viewBox="0 0 400 210" role="img" aria-label="ანდრო წვიმაში ავტობუსის გაჩერებაზე დგას მართვის მოწმობით ხელში, გვანცას მანქანა შორს მიდის">
+<rect width="400" height="210" fill="#8e8bb5"/><rect y="0" width="400" height="210" fill="url(#gN)" opacity=".45"/>
+<g fill="#5c5890"><rect x="10" y="70" width="40" height="90"/><rect x="56" y="90" width="34" height="70"/><rect x="300" y="64" width="44" height="96"/></g>
+<rect y="158" width="400" height="52" fill="#3a3670"/>
+<g class="drive" style="color:#6c7184;animation-duration:10s" opacity=".75"><use href="#car" x="40" y="122" width="64" height="28"/><g style="color:#ff6f91"><use href="#hrt" x="64" y="102" width="16" height="15"/></g></g>
+<use href="#bus" x="200" y="104" width="150" height="64"/>
+<rect x="30" y="86" width="100" height="6" rx="3" fill="#2a2350"/><rect x="34" y="92" width="5" height="68" fill="#2a2350"/><rect x="121" y="92" width="5" height="68" fill="#2a2350"/>
+<g style="color:#3b82d9"><use href="#per" x="68" y="96" width="38" height="82"/></g>
+<rect x="100" y="132" width="22" height="14" rx="2" fill="#fff" stroke="#f5b94a" stroke-width="2"/>
+<path d="M82 100q-6 4-6 12" stroke="#2a2350" stroke-width="0"/>
+<g stroke="#bfe6ff" stroke-width="1.5" opacity=".7"><g class="rain"><path d="M20 10l-4 12M60 30l-4 12M110 6l-4 12M160 40l-4 12M210 14l-4 12M260 36l-4 12M310 8l-4 12M360 30l-4 12M40 80l-4 12M180 90l-4 12M330 100l-4 12"/></g></g>
+<rect x="290" y="30" width="46" height="40" rx="6" fill="#fff"/><text x="313" y="58" text-anchor="middle" font-size="26" font-weight="800" fill="#2a2350" font-family="sans-serif">P</text><path d="M290 30l46 40" stroke="#ff5c7a" stroke-width="4"/>
+<text x="86" y="84" text-anchor="middle" font-size="20" class="fl">😞</text>
+</svg>
+<div class="body"><span class="tag">ეპიზოდი 9 · ახალი სცენა</span><h2>მართვის მოწმობა გაქვს, მანქანა - არა </h2>
+<p>ანდრო წვიმაში დგას გაჩერებაზე. ჯიბეში მართვის მოწმობა უდევს, მთელი ბრძოლის ერთადერთი ტროფეი. ავტობუსი სავსეა, მანქანა კი აღარ ჰყავს.</p>
+<div class="q" style="--d:.5s"><b>ანდრო:</b> „ამისთვის ვიბრძოდი? ეს პრავა ავტობუსის ბილეთად მაინც გამომადგეს...“</div>
+<div class="q g" style="--d:1.3s"><b> (მოგონებაში):</b> „თუ პრავას წაგართმევენ, სამსახურში მე გატარებ.“</div>
+<p class="nar" style="--d:2s">„დაპირება ისტორიას დარჩა. გვანცას Tesla კი, ჩუმად სხვა მიმართულებით გაქრა.“</p>
+
+<div class="nav"><button class="bk" type="button">უკან</button><button class="nx" type="button">შემდეგი სცენა</button></div></div>
+</div></section>
+
+<!-- 11 FINALE -->
+<section class="scene"><div class="card">
+<svg class="il" viewBox="0 0 400 210" role="img" aria-label="მზის ჩასვლა, ორი Tesla და გული">
+<rect width="400" height="210" fill="url(#gS)"/><circle cx="200" cy="140" r="78" fill="#ffd27a" opacity=".9"/>
+<g fill="#3a2f6a"><rect x="0" y="110" width="30" height="60"/><rect x="34" y="90" width="26" height="80"/><rect x="340" y="100" width="28" height="70"/><rect x="372" y="120" width="28" height="50"/></g>
+<rect y="168" width="400" height="42" fill="#2a2350"/>
+<g style="color:#3b82d9"><use href="#car" x="70" y="124" width="130" height="56"/></g><g style="color:#6c7184"><use href="#car" x="204" y="124" width="130" height="56" transform="translate(538 0) scale(-1 1)"/></g>
+<g style="color:#ff6f91" class="pop"><use href="#hrt" x="176" y="42" width="48" height="44"/></g>
+<g style="color:#fff"><use href="#hrt" x="120" y="70" width="16" height="15" class="fl"/><use href="#hrt" x="268" y="64" width="14" height="13" class="fl" style="animation-delay:1.8s"/></g>
+</svg>
+<div class="body"><span class="tag">ეპიზოდი 10 · ფინალი</span><h2>სცენა, რომელიც ჯერ არ გადაღებულა ❤️</h2>
+<p>ორი Tesla, ერთი ავარია, პატრული, სასამართლო, არ ჩაბარებული დესერტი და ბევრი მოულოდნელი დამთხვევა... ერთი რამ ცხადია:</p>
+<p class="nar" style="--d:.5s">ამ ისტორიის ყველაზე საინტერესო ნაწილი მანქანები არასოდეს ყოფილა.</p>
+<p style="margin-top:12px"><b>სცენარისტმა შენიშვნები გაითვალისწინა:</b> ახალი ადგილი, ორი მთავარი გმირი, ნაკლები ფორმალურობა და ცოტა მეტი რომანტიკა 😏</p>
+<h3 style="margin-top:14px;font-size:clamp(20px,3.6vw,26px)">შემდეგი სცენა ჯერ არ დამიწერია. ერთ საღამოს ხომ არ შევხვდეთ და ერთად მოვიფიქროთ? 😉</h3>
+<div class="nav" style="flex-wrap:wrap"><button class="nx" id="yes" type="button">🎟️ კარგი, ვნახოთ რა გამოგვივა 😉</button><button id="no" type="button">🎬 ამჯერად გამოვტოვებ 😄</button></div>
+<div id="msg" role="status" aria-live="polite"></div>
+<p style="text-align:center;margin-top:14px;font-size:14px"><i>ფინალური გადაწყვეტილება მეორე მთავარ გმირს ეკუთვნის.</i></p>
+<div class="nav"><button class="bk" type="button">უკან</button></div></div>
+</div></section>
+
+<script>
+(function(){
+function gc(n,t){try{if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:n,title:t||n,event:true});}}catch(e){}}
+window.__gc=gc;
+var seenSc={};
+['gesturestart','gesturechange','gestureend'].forEach(function(n){document.addEventListener(n,function(e){e.preventDefault();});});
+var S=[].slice.call(document.querySelectorAll('.scene')),i=0,D=document.getElementById('dots');
+S.forEach(function(){D.appendChild(document.createElement('i'));});
+function go(n){
+ i=Math.max(0,Math.min(S.length-1,n));
+ S.forEach(function(s,k){s.classList.toggle('on',k===i);D.children[k].classList.toggle('on',k===i);});
+ document.getElementById('home').classList.toggle('vis',i>0);
+ if(!seenSc[i]){seenSc[i]=1;gc('scene-'+(i<10?'0':'')+i+(i===0?'-cover':(i===S.length-1?'-finale':'')));}
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+S.forEach(function(s){
+ var nx=s.querySelector('.nx:not(#yes)'),bk=s.querySelector('.bk');
+ if(nx)nx.addEventListener('click',function(){go(i+1);});
+ if(bk)bk.addEventListener('click',function(){go(i-1);});
+});
+document.addEventListener('keydown',function(e){
+ if(e.key==='ArrowRight')go(i+1);if(e.key==='ArrowLeft')go(i-1);
+});
+go(0);
+document.getElementById('home').addEventListener('click',function(){gc('home-clicked');go(0);});
+var msg=document.getElementById('msg');
+function show(t){
+  msg.innerHTML = t;
+  msg.classList.remove('show');
+  void msg.offsetWidth;
+  msg.classList.add('show');
+}
+  document.getElementById('no').addEventListener('click',function(){
+   gc('final-no-clicked');
+   show(`
+  <div style="text-align:center; line-height:1.7;">
+
+    <h2 style="margin-bottom:20px;">
+      🎬 გადაღებები გადაიდო
+    </h2>
+
+    <p>
+      სცენარისტი გადაწყვეტილებას პატივს სცემს.
+    </p>
+
+    <p style="margin-top:18px;">
+      არაფრის მოწერა არ არის საჭირო.
+      მადლობა, რომ ბოლომდე უყურე
+      ამ საინტერესო ისტორიას. ❤️
+    </p>
+
+  </div>
+`);
+  });
+document.getElementById('yes').addEventListener('click',function(){
+gc('final-yes-clicked');
+show(`
+  <div style="text-align:center; line-height:1.7;">
+
+    <h2 style="margin-bottom:20px;">
+      🎬 გაგრძელება დამტკიცებულია!
+    </h2>
+
+    <p style="margin-top:18px;">
+      ერთი ტექნიკური პრობლემა დარჩა:
+      საიტის აწყობა ვისწავლე, მაგრამ რომელ ღილაკს დააჭირე ეგ როგორ ვნახო არ ვიცი  🤦‍♂️
+    </p>
+
+    <p style="margin-top:18px;">
+      ამიტომ დასადასტურებლად
+      Instagram-ზე მომწერე
+      <strong>„გადაღებებზე მოვდივარ“</strong> 😄
+    </p>
+
+  </div>
+`);
+  for(var k=0;k<18;k++){(function(k){setTimeout(function(){
+  var s=document.createElement('span');s.className='hb';s.textContent=['❤️','💖','✨','🎬'][k%4];
+  s.style.left=(Math.random()*95)+'vw';document.body.appendChild(s);
+  setTimeout(function(){s.remove();},3100);},k*120);})(k);}
+});
+})();
+</script>
+<script>
+(function(){
+var AC,mus=false,iv,k=0,N=[523,659,784,659,587,698,880,698];
+function ac(){if(!AC){var C=window.AudioContext||window.webkitAudioContext;if(!C)return null;AC=new C();}if(AC.state==='suspended')AC.resume();return AC;}
+function tone(f,d,t,v){var c=ac();if(!c)return;var o=c.createOscillator(),g=c.createGain();o.type=t||'sine';o.frequency.value=f;g.gain.setValueAtTime(v||.06,c.currentTime);g.gain.exponentialRampToValueAtTime(.0001,c.currentTime+d);o.connect(g);g.connect(c.destination);o.start();o.stop(c.currentTime+d);}
+function fx(x,y,t,c){var s=document.createElement('span');s.className=c;s.textContent=t;s.style.left=x+'px';s.style.top=y+'px';s.style.setProperty('--dx',(Math.random()*80-40)+'px');document.body.appendChild(s);setTimeout(function(){s.remove();},1400);}
+document.addEventListener('click',function(e){var sv=e.target.closest&&e.target.closest('svg.il');if(!sv)return;var u=e.target.closest('use');
+ if(u&&u.getAttribute('href')==='#car'){tone(330,.25,'square',.05);setTimeout(function(){tone(392,.3,'square',.05);},120);fx(e.clientX,e.clientY,'ბიპ-ბიპ!','pk tx');}else{tone(880+Math.random()*300,.5,'sine',.07);}
+ for(var j=0;j<5;j++)fx(e.clientX,e.clientY,['💗','✨','❤️'][j%3],'pk');});
+var lt=0;document.addEventListener('pointermove',function(e){var n=Date.now();if(n-lt<70)return;lt=n;fx(e.clientX,e.clientY,'✨','pk sp');});
+var gs=document.getElementById('gstart'),G=document.getElementById('game'),T=document.getElementById('tap'),R=document.getElementById('gres'),P1=document.getElementById('p1'),P2=document.getElementById('p2'),p=0,a=0,on=false,iv2;
+function chk(){if(!on)return;if(p>=100||a>=100){window.__gc(p>=100?'game-win':'game-lose');on=false;clearInterval(iv2);T.disabled=true;R.textContent=p>=100?'გვანცა იმარჯვებს! 🏆 ამჯერად მტკიცებულებაც ჩანს, დასქრინე შედეგი და მოითხოვე დესერტი':'ანდრო იმარჯვებს... მაგრამ ტექნიკა ისევ ფუჭდება 😄 არც ამჯერად ითვლება!';}}
+gs.onclick=function(){window.__gc(G.hidden?'game-open':'game-replay');G.hidden=false;p=0;a=0;on=false;clearInterval(iv2);P1.style.width=P2.style.width='0';R.textContent='მზად ხარ? დააჭირე სწრაფად და ბევრჯერ!';T.disabled=false;gs.textContent='🔁 თავიდან';};
+function tap(){if(T.disabled)return;if(!on){window.__gc('game-first-tap');on=true;iv2=setInterval(function(){a+=1.1+Math.random();P2.style.width=Math.min(a,100)+'%';chk();},100);}p+=3.2;P1.style.width=Math.min(p,100)+'%';tone(300+p*4,.08,'triangle',.04);chk();}
+T.addEventListener('pointerdown',function(e){e.preventDefault();tap();});
+T.addEventListener('click',function(e){if(e.detail===0)tap();});
+var yb=document.getElementById('yes'),nb=document.getElementById('no'),sc=1,tk;
+nb.addEventListener('click',function(){sc=Math.min(sc+.12,1.6);yb.style.transform='scale('+sc+')';nb.animate([{transform:'translateX(0)'},{transform:'translateX(-8px)'},{transform:'translateX(8px)'},{transform:'translateX(0)'}],{duration:300});});
+yb.addEventListener('click',function(){if(tk)return;tk=document.createElement('div');tk.className='ticket';tk.innerHTML='<div class="tl"><small></small></div><div class="tr2">🎟️</div>';document.getElementById('msg').after(tk);[523,659,784,1047].forEach(function(f,i){setTimeout(function(){tone(f,.6,'sine',.07);},i*140);});});
+})();
+</script>
+</body>
+</html>
+
+</body></html>
